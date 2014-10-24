@@ -1,0 +1,54 @@
+{
+	"name": "andrew",
+	"description": "andrew is a Siri-like personal assistant running on node.js.",
+	"version": "0.1.0",
+	"keywords": [
+		"personal assistant",
+		"home automation",
+		"nlp",
+		"nlu",
+		"siri",
+		"google now",
+		"smart",
+		"plugins",
+		"node",
+		"javascript"
+	],
+	"author": {
+		"name": "Jannis R",
+		"email": "mail@jannisr.de",
+		"url": "http://jannisr.de"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/derhuerst/andrew.git"
+	},
+	"homepage": "https://github.com/derhuerst/andrew",
+	"license": "MIT",
+	"preferGlobal": true,
+	"directories": {
+		"bin": "./bin",
+		"doc": "./docs",
+		"lib": "./src"
+	},
+	"main": "src/index.coffee",
+	"bin": {
+		"andrew": "index.coffee"
+	},
+	"dependencies": {
+		"bayes": "0.0.3",
+		"chalk": "^0.5.1",
+		"extend": "^2.0.0",
+		"logme": "^0.4.0",
+		"request": "^2.46.0",
+		"restify": "^2.8.3"
+	},
+	"engine": "node >= 0.10",
+	"config": {
+		"plugins": [
+			"echo",
+			"joke"
+		],
+		"port": 8080
+	}
+}

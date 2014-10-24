@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "andrew",
+			"folder_exclude_patterns": [
+				"src",
+				"plugins"
+			],
+			"file_exclude_patterns": [
+				"*.sublime-workspace"
+			]
+		},
+		{
+			"path": "./src",
+			"name": "src"
+		},
+		{
+			"path": "./plugins",
+			"name": "plugins"
+		}
+	],
+	"settings": {
+		"tab_size": 4,
+		"translate_tabs_to_spaces": false
+	}
+}
